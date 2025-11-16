@@ -1,0 +1,13 @@
+การเรียกใช้งานเบื้องต้น
+
+import yfinance as yf // import package
+
+symbol = yf.Ticker("JEPQ") // Ticker
+
+print(symbol.info) // show all infomation about stock
+
+ใช้ method เฉพาะเจาะจง
+
+symbol.info.dividendYield => แสดงปันผลเป็นเปอร์เซ็น
+symbol.info.regularMarketPrice => ราคาหุ้น
+symbol.info.longName => ชื่อบริษัท
